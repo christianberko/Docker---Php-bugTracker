@@ -1,5 +1,5 @@
 <?php
-// Simple index page for the PHP Bug Tracking Application
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
