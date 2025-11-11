@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 100;
+}
+
+
+body{
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px; 
+    position: relative; 
+}
+
+.bugContainer{
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap if there's not enough horizontal space */
+    gap: 30px; /* Space between each box */
+    margin-top: 5px;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.bug-box{
+    width: 30%; /* Width of each bug box, adjust as needed */
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    transition: .25s;
+    cursor: pointer;
+}
+
+.bug-box p {
+    margin: 5px 0; /* Space between paragraphs in each box */
+}
+
+
+.bugHeader{
+    margin-top: 20px;
+}
+
+
+.bug-box:hover{
+    transform: scale(1.01);
+    z-index: 2;
+}
+
+/* .date{
+    color:blackred;
+} */
+
+.form-container {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding:20px;
+    margin-bottom: 20px;
+    
+}
+
+.form-container input{
+    margin: 10px;
+    
+   
+}
+
+input{
+    padding: 10px;
+    width: 400px;
+   
+    
+}
+
+input:active{
+    background-color: #e6e6e6;
+}
+
+select{
+    padding: 10px;
+}
+
+input,select{
+    margin: 20px;
+    border-radius: 5px;
+    background-color:lightgray;
+    border: none;
+}
+
+
+
+button{
+    margin: 10px;
+    border-radius: 5px;
+    padding:10px;
+    cursor: pointer;
+    background-color:  lightgreen    ;  
+    transition: .25s;                 
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border: none;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.01);
+    z-index: 2;
+}
+
+.bug-header{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.logout{
+    position: absolute;
+    top: 10px;  /* Distance from the top of the header */
+    right: 10px; /* Distance from the right of the header */
+}
+
+.logout-button{
+    background-color: #ff6666;
+    padding:10px;
+    width:100px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+   
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #85FFBD;
+    background-image: linear-gradient(180deg, #85FFBD 0%, #FFFB7D 74%);
+  
+    border-radius: 100px;
+  }
+  
+  .red{
+    color: red;
+  }
+
+.bugContainer h3{
+    display: block;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.project-header{
+    font-size: 20px;
+ }

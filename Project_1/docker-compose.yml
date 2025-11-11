@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_SERVER: db
+      DB_USER: bugtracker_user
+      DB_PASSWORD: bugtracker_pass
+      DB: bugtracker_db
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: bugtracker_db
+      MYSQL_USER: bugtracker_user
+      MYSQL_PASSWORD: bugtracker_pass
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+
